@@ -3,9 +3,14 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.7.2'
 
-gem 'rails',      '6.0.4'
+gem 'devise'
+gem "refile", require: "refile/rails", github: 'manfe/refile'
+gem "refile-mini_magick"
+gem "bulma-rails"
 gem 'mysql2',     '>= 0.4.4'
 gem 'dotenv-rails'
+
+gem 'rails',      '6.0.4'
 gem 'puma',       '4.3.6'
 gem 'sass-rails', '5.1.0'
 gem 'webpacker',  '4.0.7'
